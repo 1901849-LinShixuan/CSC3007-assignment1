@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="X-UA-Compatible" content="ie-edge">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    
+    <title>CSC3007 Assgn1</title>
+
+    <script>
+        function loadTime() {
+            document.getElementById("time").innerHTML = "Last Retrieved: " + document.lastModified;
+        }
+    </script>
+    
+</head>
+</head>
+<body onload="loadTime();">
+    <br>
+    <center><h1>Singapore Pollutant Standards Index (PSI)</h1></center>
+    <h3><i>Please wait... API Fetch takes a while to load.</i></h3>
+    <h2 id="time"></h2>
+    <div class="container">
+        <table class="table table-stripped" id="data_psi"></table>
+    </div>
+
+    <script src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+</body>
+</html>
